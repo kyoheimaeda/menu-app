@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DetailView from '../views/DetailView.vue'
+import IngredientsView from '../views/IngredientsView.vue'
 
 const routes = [
   {
@@ -15,6 +16,12 @@ const routes = [
     component: DetailView,
     props: true,
     meta: { title: '献立詳細' },
+  },
+  {
+    path: '/ingredients',
+    name: 'IngredientsView',
+    component: IngredientsView,
+    meta: { title: '買い物リスト' },
   },
 ]
 

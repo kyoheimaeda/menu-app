@@ -15,6 +15,9 @@ defineProps({
         <mdicon name="chevron-left" />
       </RouterLink>
       <h1>{{ title }}</h1>
+      <RouterLink to="/ingredients/">
+        <mdicon name="chevron-right" />
+      </RouterLink>
     </div>
   </header>
 </template>
@@ -32,9 +35,9 @@ header .inner {
   grid-template-columns: 1fr auto 1fr;
 }
 
-header .inner::after {
+/* header .inner::after {
   content: '';
-}
+} */
 
 header h1 {
   font-size: 2rem;
